@@ -6,7 +6,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/test", (req, res) => {
-  res.send(__dirname + "/files/1-KONSEP-DASAR-PYTHON.docx");
+  res.download(__dirname + "/files/1-KONSEP-DASAR-PYTHON.docx");
 });
 
 app.listen(3000);
